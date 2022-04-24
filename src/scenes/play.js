@@ -246,7 +246,7 @@ class Play extends Phaser.Scene {
     }
 
     checkCollisionBird(lizard, bird) { //needs fixing
-        if((lizard.x === lane1 || lizard.x === lane3) && (bird.y >= row2)) {
+        if(lizard.x === lane2 && (bird.y === row1 || bird.y === row2)) {
                 return true;
         }
         else {
