@@ -8,8 +8,8 @@ class Play extends Phaser.Scene {
         // Player/Lizard
         //this.load.image('lizard', './assets/lizard.png');
         this.load.spritesheet('lizard', './assets/new_lizard.png', {
-            frameWidth: 64,
-            frameHeight: 94,
+            frameWidth: 150,
+            frameHeight: 150,
             startFrame: 0,
             endFrame: 3
         });
