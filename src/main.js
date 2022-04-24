@@ -20,6 +20,11 @@ let score;
 
 let borderUISize = config.height / 30;  // should be 20px
 let borderpadding = borderUISize / 2;   // 10px
+let lane1 = config.width/6;
+let lane2 = config.width/2;
+let lane3 = config.width * (5/6);
+let row1 = config.height* (7/8);
+let row2 = config.height/2;
 
 // set aside keybinds
 let keyA, keyD, keyW, keySPACE;
