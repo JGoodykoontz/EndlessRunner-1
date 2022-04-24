@@ -103,7 +103,7 @@ class Play extends Phaser.Scene {
         });
 
         // Snek
-        this.snake1 = new Snake(this, -320, 0, 'slither', 0).setOrigin(0, 0);
+        this.snake1 = new Snake(this, -150, 0, 'slither', 0).setOrigin(0.5);
         // animate
         this.snake1.play({key: 'slithering', repeat: -1});  // Repeat = -1 means loops indefinetely
 
@@ -178,7 +178,7 @@ class Play extends Phaser.Scene {
         this.p1Lizard.update();
         if(Phaser.Input.Keyboard.JustDown(keyW)) {
             this.p1Lizard.y = row2;
-            this.time.delayedCall(700, reset, null, this);
+            this.time.delayedCall(400, reset, null, this);
         }
         //this.branch1.update();
         //this.branch2.update();

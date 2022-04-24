@@ -14,14 +14,14 @@ class Snake extends Phaser.GameObjects.Sprite {
         // move snake to top of screen
         if(this.y >= game.config.height) {
             this.y = 0 - game.config.height;
-            this.x = -320;
+            this.x = -150;
             this.attack = false;
         }
 
         // snake attacks
-        if(this.y >= game.config.height -125) {
+        if(this.y === row1) {
             this.attack = true;
-            this.x = 0;
+            this.x = lane2;
         }
     }
 }
